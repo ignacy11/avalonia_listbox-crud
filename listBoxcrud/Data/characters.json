@@ -1,0 +1,27 @@
+[
+  {
+    "Name": "Rodion Raskolnikow",
+    "Role": "Student",
+    "Description": "Młody, inteligentny, ale wewnętrznie rozdarty student prawa. Popełnia zbrodnię, próbując udowodnić swoją teorię o nadludziach."
+  },
+  {
+    "Name": "Sonia Marmieładowa",
+    "Role": "Córka urzędnika, prostytutka z konieczności",
+    "Description": "Cicha, dobra i głęboko religijna. W życiu zmuszona do poświęceń, staje się moralnym drogowskazem dla Raskolnikowa."
+  },
+  {
+    "Name": "Dmitrij Razumichin",
+    "Role": "Student",
+    "Description": "Przyjaciel Raskolnikowa. Pracowity, życzliwy, lojalny. Przeciwieństwo głównego bohatera."
+  },
+  {
+    "Name": "Porfiry Pietrowicz",
+    "Role": "Śledczy",
+    "Description": "Przenikliwy i inteligentny sędzia śledczy. Prowadzi sprawę morderstwa lichwiarki i powoli zawęża krąg podejrzeń wokół Raskolnikowa."
+  },
+  {
+    "Name": "Arkadiusz Swidrygajłow",
+    "Role": "Były urzędnik, libertyn",
+    "Description": "Człowiek moralnie dwuznaczny, bogaty i nieprzewidywalny. Jego obecność pogłębia dramat bohaterów."
+  }
+]
