@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/kuba/RiderProjects/listBoxcrud/listBoxcrud/listBoxcrud.csproj": {}
+    "/home/kuba/Desktop/listBoxcrud/listBoxcrud/listBoxcrud.csproj": {}
   },
   "projects": {
-    "/home/kuba/RiderProjects/listBoxcrud/listBoxcrud/listBoxcrud.csproj": {
+    "/home/kuba/Desktop/listBoxcrud/listBoxcrud/listBoxcrud.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/kuba/RiderProjects/listBoxcrud/listBoxcrud/listBoxcrud.csproj",
+        "projectUniqueName": "/home/kuba/Desktop/listBoxcrud/listBoxcrud/listBoxcrud.csproj",
         "projectName": "listBoxcrud",
-        "projectPath": "/home/kuba/RiderProjects/listBoxcrud/listBoxcrud/listBoxcrud.csproj",
+        "projectPath": "/home/kuba/Desktop/listBoxcrud/listBoxcrud/listBoxcrud.csproj",
         "packagesPath": "/home/kuba/.nuget/packages/",
-        "outputPath": "/home/kuba/RiderProjects/listBoxcrud/listBoxcrud/obj/",
+        "outputPath": "/home/kuba/Desktop/listBoxcrud/listBoxcrud/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/kuba/.nuget/NuGet/NuGet.Config"
@@ -90,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.112/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.113/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
