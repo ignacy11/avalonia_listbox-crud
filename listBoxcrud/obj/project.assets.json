@@ -1828,19 +1828,19 @@
     ]
   },
   "packageFolders": {
-    "/home/kuba/.nuget/packages/": {}
+    "/home/ignacy/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/kuba/Desktop/listBoxcrud/listBoxcrud/listBoxcrud.csproj",
+      "projectUniqueName": "/home/ignacy/RiderProjects/avalonia_listbox-crud/listBoxcrud/listBoxcrud.csproj",
       "projectName": "listBoxcrud",
-      "projectPath": "/home/kuba/Desktop/listBoxcrud/listBoxcrud/listBoxcrud.csproj",
-      "packagesPath": "/home/kuba/.nuget/packages/",
-      "outputPath": "/home/kuba/Desktop/listBoxcrud/listBoxcrud/obj/",
+      "projectPath": "/home/ignacy/RiderProjects/avalonia_listbox-crud/listBoxcrud/listBoxcrud.csproj",
+      "packagesPath": "/home/ignacy/.nuget/packages/",
+      "outputPath": "/home/ignacy/RiderProjects/avalonia_listbox-crud/listBoxcrud/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/kuba/.nuget/NuGet/NuGet.Config"
+        "/home/ignacy/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"

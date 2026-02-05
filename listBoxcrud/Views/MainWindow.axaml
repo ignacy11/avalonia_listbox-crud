@@ -14,17 +14,36 @@
              to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
         <vm:MainWindowViewModel/>
     </Design.DataContext>
-
+    
     <StackPanel Margin="20" Spacing="20">
+        <TextBlock Text="Dodaj nowego bohatera"/>
+        
+        <TextBox Watermark="Podaj imię bohatera" FontSize="35"
+                 Text="{Binding NewName}"
+                 /> <!-- Watermark działa jak hint -->
+        <TextBox Watermark="Rola (np. student)" FontSize="35"
+                 Text="{Binding NewRole}"
+                 />
+        <TextBox Watermark="Opis postaci"
+                 Text="{Binding NewDescription}"
+                 Height="60"
+                 AcceptsReturn="True"
+                 TextWrapping="Wrap"
+                 />
+        <Button Content="Dodaj bohatera"
+                Command="{Binding AddCommand}"
+                Margin="0,0,0,20"
+                />
         <ListBox ItemsSource="{Binding Characters}">
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <TextBlock Text="{Binding Name}" FontWeight="Bold"/>
-                    <TextBlock Text="{Binding Role}" FontStyle="Italic"/>
-                    <TextBlock Text="{Binding Description}" TextWrapping="Wrap"/>
+                    <StackPanel Width="400" Margin="10" Spacing="5">
+                        <TextBlock Text="{Binding Name}" FontWeight="Bold" />
+                        <TextBlock Text="{Binding Role}" FontStyle="Italic" />
+                        <TextBlock Text="{Binding Description}" TextWrapping="Wrap" />
+                    </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
     </StackPanel>
-
 </Window>
