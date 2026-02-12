@@ -5,6 +5,8 @@ using System.IO;
 using System.Linq;
 using System.Reactive;
 using System.Text.Json;
+using System.Threading.Tasks;
+using Avalonia;
 using Avalonia.Controls.Primitives;
 using Avalonia.Media.TextFormatting;
 using listBoxcrud.Models;
@@ -28,12 +30,15 @@ public class MainWindowViewModel : ViewModelBase
     public ReactiveCommand<Unit,Unit> AddCommand { get; }
     
     public ReactiveCommand<Unit,Unit> SaveCommand { get; } 
+ 
+    public ReactiveCommand<Character,Unit> EditCommand { get; }
     
     public MainWindowViewModel()
     {
         LoadCharacters();
         AddCommand = ReactiveCommand.Create(AddCharacter);
         SaveCommand = ReactiveCommand.Create(SavetoJson);
+        EditCommand = ReactiveCommand.CreateFromTask<Character>(OpenEditWindowAsync);
     }
 
     private void AddCharacter()
@@ -60,6 +65,14 @@ public class MainWindowViewModel : ViewModelBase
         NewName = string.Empty;
         NewRole = string.Empty;
         NewDescription = string.Empty;
+    }
+
+    private async Task OpenEditWindowAsync(Character character)
+    {
+        await new EditWindow
+        {
+            DataContext = new EditCharacterViewModel(character)
+        }.ShowDialog(Application.Current!.GetMainWindow()!)
     }
     
     private void SavetoJson()

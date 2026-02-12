@@ -24,5 +24,8 @@ build_property.EnableCodeStyleSeverity =
 [/home/ignacy/RiderProjects/avalonia_listbox-crud/listBoxcrud/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[/home/ignacy/RiderProjects/avalonia_listbox-crud/listBoxcrud/Views/EditWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [/home/ignacy/RiderProjects/avalonia_listbox-crud/listBoxcrud/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

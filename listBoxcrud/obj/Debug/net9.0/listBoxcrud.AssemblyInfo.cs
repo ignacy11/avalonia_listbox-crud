@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("listBoxcrud")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6d1952c77e72f8a08fa9bf0fb03a3d0ab17614c1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d8f03e25d504bfbe89705da7ebb6fa051e4b622a")]
 [assembly: System.Reflection.AssemblyProductAttribute("listBoxcrud")]
 [assembly: System.Reflection.AssemblyTitleAttribute("listBoxcrud")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -3,7 +3,9 @@
   <component name="AvaloniaProject">
     <option name="projectPerEditor">
       <map>
+        <entry key="listBoxcrud/Views/EditWindow.axaml" value="listBoxcrud/listBoxcrud.csproj" />
         <entry key="listBoxcrud/Views/MainWindow.axaml" value="listBoxcrud/listBoxcrud.csproj" />
+        <entry key="listBoxcrud/Views/Window1.axaml" value="listBoxcrud/listBoxcrud.csproj" />
       </map>
     </option>
   </component>

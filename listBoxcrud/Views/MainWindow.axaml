@@ -7,7 +7,8 @@
         x:Class="listBoxcrud.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
         Icon="/Assets/avalonia-logo.ico"
-        Title="listBoxcrud">
+        Title="listBoxcrud"
+        Background="#181825">
 
     <Design.DataContext>
         <!-- This only sets the DataContext for the previewer in an IDE,
@@ -30,10 +31,16 @@
                  AcceptsReturn="True"
                  TextWrapping="Wrap"
                  />
-        <Button Content="Dodaj bohatera"
-                Command="{Binding AddCommand}"
-                Margin="0,0,0,20"
-                />
+        <StackPanel Orientation="Horizontal">
+            <Button Content="Dodaj bohatera"
+                    Command="{Binding AddCommand}"
+                    Margin="0,0,0,20"
+                    CornerRadius="5" />
+            <Button Content="Zapisz w JSON"
+                    Command="{Binding SaveCommand}"
+                    Margin="5,0,0,20"
+                    CornerRadius="5" />
+        </StackPanel>
         <ListBox ItemsSource="{Binding Characters}">
             <ListBox.ItemTemplate>
                 <DataTemplate>
@@ -41,6 +48,10 @@
                         <TextBlock Text="{Binding Name}" FontWeight="Bold" />
                         <TextBlock Text="{Binding Role}" FontStyle="Italic" />
                         <TextBlock Text="{Binding Description}" TextWrapping="Wrap" />
+                        <Button Content="Edytuj"
+                                Command="{Binding$parent[Window].DataContext.EditCommand)}"
+                                CommandParameter="{Binding}"
+                                /> <!-- musi "wydostać" się z DataContext -->
                     </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>
