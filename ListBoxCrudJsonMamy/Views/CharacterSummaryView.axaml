@@ -1,0 +1,35 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:models="clr-namespace:ListBoxCrudJsonMamy.Models"
+             xmlns:vm="clr-namespace:ListBoxCrudJsonMamy.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="ListBoxCrudJsonMamy.Views.CharacterSummaryView"
+             x:DataType="models:Character">
+    <StackPanel Width="400" Margin="10" Spacing="5">
+        <TextBlock Text="{Binding Name}"
+                   FontWeight="Bold"
+        />
+        <TextBlock Text="{Binding Role}"
+                   FontStyle="Italic"
+        />
+        <TextBlock Text="{Binding Description}"
+                   TextWrapping="Wrap"
+        />
+        <StackPanel Orientation="Horizontal" Spacing="10">
+            <Button Content="Edytuj"
+                    Background="CadetBlue"
+                    Foreground="BlanchedAlmond"
+                    Command="{Binding $parent[Window].((vm:MainWindowViewModel)DataContext).EditCommand}"
+                    CommandParameter="{Binding}"
+            />
+            
+            <Button Content="Usuń"
+                    HorizontalAlignment="Left"
+                    Command="{Binding $parent[Window].((vm:MainWindowViewModel)DataContext).DeleteCommand}"
+                    CommandParameter="{Binding}"
+            />
+        </StackPanel> 
+    </StackPanel>
+</UserControl>

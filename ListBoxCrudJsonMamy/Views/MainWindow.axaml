@@ -1,0 +1,62 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:models="clr-namespace:ListBoxCrudJsonMamy.Models"
+        xmlns:vm="clr-namespace:ListBoxCrudJsonMamy"
+        xmlns:viewModels="clr-namespace:ListBoxCrudJsonMamy.ViewModels"
+        xmlns:views="clr-namespace:ListBoxCrudJsonMamy.Views"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="650"
+        x:Class="ListBoxCrudJsonMamy.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="ListBoxCrudJsonMamy"
+        x:CompileBindings="False"
+        x:DataType="models:Character"
+        >
+
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <viewModels:MainWindowViewModel/>
+    </Design.DataContext>
+    <ScrollViewer>
+        <StackPanel Margin="20" Spacing="12">
+           <TextBlock Text="Dodaj nowego bohatera" FontSize="35"  />
+           <TextBox Watermark="Podaj imię bohatera" 
+                    Text="{Binding NewName}"
+                    />
+           <TextBox Watermark="Rola (np. student)"
+                    Text="{Binding NewRole}"
+                    /> 
+           <TextBox Watermark="Opis postaci"
+                    Text="{Binding NewDescription}"
+                    Height="60"
+                    TextWrapping="Wrap"
+                    AcceptsReturn="True"
+                    />  
+          <StackPanel Orientation="Horizontal" Spacing="10" Margin="10">
+               <Button Content="Dodaj bohatera" Command="{Binding AddCommand}"
+                         Margin="0,0,0,20"
+                         Background="Black"
+                         Foreground="Yellow"
+                         CornerRadius="5"
+                         />
+                 
+                 <Button Content="Zapisz listę w pliku JSON" 
+                         Command="{Binding SaveCommand}"
+                         Margin="0,0,0,20"
+                         Background="BlanchedAlmond"
+                         CornerRadius="5"
+                         
+                         />
+          </StackPanel> 
+            <ListBox ItemsSource="{Binding Characters }"> 
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <views:CharacterSummaryView/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </StackPanel>
+    </ScrollViewer>
+</Window>

@@ -1,0 +1,32 @@
+[
+  {
+    "Name": "Rodion Raskolnikow",
+    "Role": "Student",
+    "Description": "M\u0142ody, inteligentny, ale wewn\u0119trznie rozdarty student prawa. Pope\u0142nia zbrodni\u0119, pr\u00F3buj\u0105c udowodni\u0107 swoj\u0105 teori\u0119 o nadludziach."
+  },
+  {
+    "Name": "Sonia Marmie\u0142adowa",
+    "Role": "C\u00F3rka urz\u0119dnika, prostytutka z konieczno\u015Bci",
+    "Description": "Cicha, dobra i g\u0142\u0119boko religijna. W \u017Cyciu zmuszona do po\u015Bwi\u0119ce\u0144, staje si\u0119 moralnym drogowskazem dla Raskolnikowa."
+  },
+  {
+    "Name": "Dmitrij Razumichin",
+    "Role": "Student",
+    "Description": "Przyjaciel Raskolnikowa. Pracowity, \u017Cyczliwy, lojalny. Przeciwie\u0144stwo g\u0142\u00F3wnego bohatera."
+  },
+  {
+    "Name": "Porfiry Pietrowicz",
+    "Role": "\u015Aledczy",
+    "Description": "Przenikliwy i inteligentny s\u0119dzia \u015Bledczy. Prowadzi spraw\u0119 morderstwa lichwiarki i powoli zaw\u0119\u017Ca kr\u0105g podejrze\u0144 wok\u00F3\u0142 Raskolnikowa."
+  },
+  {
+    "Name": "Arkadiusz Swidrygaj\u0142ow",
+    "Role": "By\u0142y urz\u0119dnik, libertyn",
+    "Description": "Cz\u0142owiek moralnie dwuznaczny, bogaty i nieprzewidywalny. Jego obecno\u015B\u0107 pog\u0142\u0119bia dramat bohater\u00F3w."
+  },
+  {
+    "Name": "Sam",
+    "Role": "Stra\u017Cak",
+    "Description": "pali co popadnie, a czasami co\u015B zgasi"
+  }
+]
